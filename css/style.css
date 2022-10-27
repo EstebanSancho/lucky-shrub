@@ -3,6 +3,10 @@
     font-family: 'Quicksand', sans-serif;
   }
 
+body {
+    background-color: rgb(237, 231, 241);
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -35,7 +39,6 @@ h2 {
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
 }
 
 .row::after {
@@ -51,7 +54,7 @@ img {
 
 #main-logo {
     position: relative;
-    max-height: 10em;
+    max-height: 8em;
     max-width: 10%;
     left: 45%;
     right: 45%;
@@ -67,18 +70,36 @@ a {
     color: rgb(237, 231, 241);
 }
 
+#home:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#designs:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#contact:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#about:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
 .main{
     background-image: url('/img/Pic-1.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 60vh;
+    margin-bottom: 3vh;
 }
 
 #main-article {
+    float: right;
     overflow: auto;
     color: rgb(38, 135, 127);
-    background-color: rgb(237, 231, 241, 0.7);
+    background-color: rgb(237, 231, 241, 0.8);
     height: 100%;
     margin: auto;
 }
@@ -90,3 +111,68 @@ a {
     position: relative;
 }
 
+.secundary {
+    text-align: center;
+    position: relative;
+    color: rgb(237, 231, 241);
+    background-color:rgb(38, 135, 127);
+    height: 35vh;
+}
+
+[id*="art-"] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s ease;
+    color: transparent;
+    height: 100%;
+    border-left: 10px rgb(237, 231, 241) solid;
+    border-right: 10px rgb(237, 231, 241) solid;
+}
+
+#art-2 {
+    background-image: url(/img/garden-1.jpeg);
+}
+
+#art-3 {
+    background-image: url(/img/Archigarden.jpg);
+}
+
+#art-4 {
+    background-image: url(/img/plant-nursery.jpg);
+}
+
+#art-2:hover {
+    background-position-y: 20em;
+    color: rgb(237, 231, 241);
+}
+
+#art-3:hover {
+    background-position-y: 20em;
+    color: rgb(237, 231, 241);
+}
+
+#art-4:hover {
+    background-position-y: 20em;
+    color: rgb(237, 231, 241);
+}
+
+.footer {
+    background-color:rgb(38, 135, 127);
+    height: 15vh;
+    margin-top: 1.5vh;
+    color: rgb(237, 231, 241);
+}
+
+#footer-logo {
+    position: relative;
+    max-height: 15vh;
+    border-right: 1px rgb(237, 231, 241) solid;
+}
+
+#footer-logo > img {
+    height: 12vh;
+    position: relative;
+    left: 40%;
+    right: 40%;
+}
